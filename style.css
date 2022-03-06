@@ -1,0 +1,32 @@
+body {
+    background-color: #337;
+    color: #dd9;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 0.8;
+}
+
+b {
+    font-weight: 500;
+}
+
+strong, .min, .max {
+    font-weight: 550;
+    font-size: 16px;
+}
+
+.points {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+h2 {
+    font-weight: 650;
+    font-size: 20px;
+}
