@@ -1,32 +1,47 @@
 body {
-    background-color: #337;
-    color: #dd9;
-    font-family: 'Fredoka', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 0.8;
+    background-color: #222;
+    color: #eee;
 }
 
-b {
+body, button {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 0.9;
+}
+
+button {
+    background-color: #ddd;
+    color: #333;
+    border-width: 3px;
+    border-color: #888;
+}
+
+.upgrade {
+    width: 275px;
+    height: 175px;
+}
+
+.s3, b {
     font-weight: 500;
 }
 
-strong, .min, .max {
+strong, .s2 {
     font-weight: 550;
-    font-size: 16px;
+    font-size: 20px;
 }
 
-.points {
+.s1, h3 {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 h1 {
     font-weight: 700;
-    font-size: 22px;
+    font-size: 32px;
 }
 
 h2 {
     font-weight: 650;
-    font-size: 20px;
+    font-size: 28px;
 }

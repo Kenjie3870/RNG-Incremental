@@ -13,11 +13,39 @@
         <script src="script.js" defer></script>
     </head>
     <body>
-        <title>RNG Incremental</title>
+        <title>RNG Incremental v0.0</title>
         <div>
+            <h3 id="loading">Loading...</h3>
             <h1>RNG Incremental</h1>
-            <strong>You have <span id="points">X</span> points.</strong><br>
-            <b>You get either <span id="min">X</span> or <strong id="max">X</strong> every second.</b>
+            <strong>You have <strong id="points" class="s1">X</strong> points.</strong><br>
+            <b>You get either <strong id="min" class="s2">X</strong> or <strong id="max" class="s2">X</strong> every second.</b>
+
+            <h2>Upgrades</h2>
+            <grid class="upgrade-grid">
+                <button class="upgrade" onclick="buyUpgradeA1()">
+                    <h3>A1 - Basic Upgrade</h3>
+                    Multiply both gains by <b id="a1-base" class="s3">2</b> every time.<br><br>
+                    Cost: <b id="a1-cost" class="s3">X points</b><br>
+                    Effect: <b id="a1-efft" class="s3">xX</b><br>
+                    Amount: <b id="a1-amnt" class="s3">X</b>
+                </button>
+                <button class="upgrade" onclick="buyUpgradeA2()">
+                    <h3>A2 - Base-ic Upgrade</h3>
+                    Increase A1's base and cost scaling by <b id="a2-base" class="s3">0.5</b> and <b>4/5</b> that every time.<br><br>
+                    Cost: <b id="a2-cost" class="s3">X points</b><br>
+                    Effect: <b id="a2-efft" class="s3">+X, +X</b><br>
+                    Amount: <b id="a2-amnt" class="s3">X</b>
+                </button>
+            </grid><br><br>
+
+            <h2>Changelog</h2>
+            <h3>v0.0</h3>
+            <strong>Additions</strong>:<br>
+            Added <b>Upgrades</b>! Sacrifice your points in order to get more of them! Also probably changed some colors around.<br>
+            Added a cool "Loading..." thing the first second you load in the game to show you that your stats are loading. I don't really think this is of any importance.
+            <br><br><strong>Fixes</strong>:<br>
+            Fixed the bug where instead of showing your stats, it only showed "X" (loading bug).<br>
+            Made the player actually gain between "min" and "max" points depending on a Math.random function instead of you always gaining "min".
         </div>
     </body>
 </html>
